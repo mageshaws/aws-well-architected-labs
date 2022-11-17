@@ -118,7 +118,6 @@ Resources:
   SQSLambda:
     Type: AWS::Lambda::Function
     Properties:
-      ReservedConcurrentExecutions: 10
       Runtime: python3.9
       Handler: index.lambda_handler
       Timeout: 120
@@ -258,7 +257,6 @@ Resources:
   EventLambda:
     Type: AWS::Lambda::Function
     Properties:
-      ReservedConcurrentExecutions: 10
       Runtime: python3.9
       Handler: index.lambda_handler
       Timeout: 120
